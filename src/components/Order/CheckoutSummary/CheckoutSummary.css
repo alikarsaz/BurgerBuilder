@@ -1,0 +1,14 @@
+.CheckoutSummary{
+    text-align: center;
+    width:80%;
+    margin:auto;    
+    /* height: 100px; */
+    /* background-color: orange */
+
+}
+
+@media (min-width:1000px){
+    .CheckoutSummary{
+        width: 500px;
+    }
+}

@@ -1,0 +1,43 @@
+.BuildControl{
+    display:flex;
+    align-items: center;
+
+}
+
+.Label{
+    width: 80px;
+    /* display: flex;   */
+    margin: 0 5px;
+    padding: 5px;
+    font:inherit;
+    font-weight: bold;
+}
+
+.BuildControl button{
+    width: 80px;
+    padding: 5px;
+    margin: 0 5px;
+    /* display: block; */
+    background-color: #D39952;
+    color: white;
+    border-radius: 5px;
+}
+
+.BuildControl .More{
+    background-color: rgb(212, 139, 50);
+    color: white;
+}
+.BuildControl .Less{
+    background-color: rgb(211, 182, 148);
+    color: Black;
+}
+
+.BuildControl .More:hover{
+    background-color: rgb(214, 148, 67);
+    color: white;
+}
+
+.BuildControl .Less:hover{
+    background-color: rgb(218, 174, 121);
+    color: Black;
+}
