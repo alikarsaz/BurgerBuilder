@@ -17,7 +17,13 @@ const INGREDIENT_PRICES={
 
 class BurgerBuilder extends Component{
     state={
-        ingredients:null,
+        ingredients:
+        {
+            salad:1,
+            meat:1,
+            cheese:0,
+            bacon:0
+        },
         totalPrice:5.30,
         purchasable:false,
         purchasing:false,
@@ -26,12 +32,12 @@ class BurgerBuilder extends Component{
     }
 
     componentDidMount() {
-        axios.get('/ingredients.json')
-            .then(response=>{
-                this.setState({ingredients:response.data})
-                // console.log('Have Done')
-            })
-            .catch(error=>{this.setState({error:true})});
+        // axios.get('/ingredients.json')
+        //     .then(response=>{
+        //         this.setState({ingredients:response.data})
+        //         // console.log('Have Done')
+        //     })
+        //     .catch(error=>{this.setState({error:true})});
 
     }
 

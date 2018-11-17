@@ -3,7 +3,7 @@ import Hoc from '../../hoc/hoc'
 import classes from './Layout.css'
 import Toolbar from '../Navigation/Toolbar/Toolbar'
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer'
-import Checkout from '../../containers/Checkout/Checkout';
+// import Checkout from '../../containers/Checkout/Checkout';
 
 class Layout extends Component { 
     state={
