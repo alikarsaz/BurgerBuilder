@@ -1,5 +1,5 @@
 import React, {Component}  from 'react'
-import Aux from '../Aux'
+import Hoc from '../hoc'
 import Modal from '../../components/UI/Modal/Modal'
 
 const withErrorHandler =(WrappedComponent,axios)=>{
@@ -31,14 +31,14 @@ const withErrorHandler =(WrappedComponent,axios)=>{
         render(){
             
             return (
-            <Aux>
+            <Hoc>
                 <Modal  
                     show={this.state.error} 
                     modalClosed={this.errorConfirmedHandler}>
                     {this.state.error ? this.state.error.message : null}
                 </Modal>
                 <WrappedComponent {...this.props}/>
-            </Aux>);
+            </Hoc>);
         }
     }
   
